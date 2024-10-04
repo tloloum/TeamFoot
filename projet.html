@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>PROJET 2023 Web</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Patrice THIBAUD, Louis BIGO" />
+    <link href="./styles/projet.css" type="text/css" rel="stylesheet" />
+    <link href="./styles/projet-ajouts.css" type="text/css" rel="stylesheet" />
+    <script src="scripts/data/women.js" defer></script>
+    <script src="scripts/data/men.js" defer></script>
+    <script src="scripts/projet2023.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="selectionGenre">
+        <label for="genre">Sélectionnez le genre:</label>
+        <select name="genre" id="genre">
+          <option value="homme">Homme</option>
+          <option value="femme">Femme</option>
+          <option value="mixte">Mixte</option>
+        </select>
+      </div>
+      <h1><span>MA</span> <span>PETITE</span> <span>ÉQUIPE</span></h1>
+    </header>
+
+    <main>
+      <div id="zoneSelection">
+        <div id="joueurs"></div>
+        <div id="selection"></div>
+      </div>
+
+      <div id="composition">
+        <div id="terrain">
+          <div id="ligneGardien"></div>
+          <div id="ligneDefenseur"></div>
+          <div id="ligneMilieu"></div>
+          <div id="ligneAttaquant"></div>
+        </div>
+        <div id="strategie">
+          <label for="formation">formation : </label>
+          <input type="text" value="433" name="formation" id="formation" />
+          <button id="ok">OK</button>
+        </div>
+        <div id="feuilleDeMatch">
+          <h1>Feuille de Match</h1>
+          <img id="check" src="./images/notok.png" />
+          <ul></ul>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Gardien</th>
+              <th>Defenseurs</th>
+              <th>Milieux</th>
+              <th>Attaquants</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="gardien">0</td>
+              <td class="defenseur">0</td>
+              <td class="milieu">0</td>
+              <td class="attaquant">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <strong>Projet 2A 2023</strong><br />
+      données issues de
+      <a
+        href="https://www.uefa.com/uefachampionsleague/"
+        target="_blan
+		"
+        >uefa.com</a
+      >
+    </footer>
+  </body>
+</html>
